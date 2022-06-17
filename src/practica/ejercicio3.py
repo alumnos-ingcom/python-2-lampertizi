@@ -24,13 +24,15 @@ def find_superposes(lista1,lista2):
             if lista1[count] == lista2[count]:
                 spositions = spositions + 1
                 count = count + 1
-            count = count + 1
+            else:
+                count = count + 1
     else:
         while count < len(lista2):
             if lista2[count] ==  lista1[count]:
                 spositions = spositions + 1
                 count = count + 1
-            count = count + 1
+            else:
+                count = count + 1
     return spositions
 
 def principal():
