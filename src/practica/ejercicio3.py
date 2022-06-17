@@ -20,14 +20,14 @@ def find_superposes(lista1,lista2):
     count = 0
     spositions = 0
     if menor:
-        while count < len(menor):
-            if lista1[count] in lista2:
+        while count < len(lista1):
+            if lista1[count] == lista2[count]:
                 spositions = spositions + 1
                 count = count + 1
             count = count + 1
     else:
-        while count < len(menor):
-            if lista2[count] in lista1:
+        while count < len(lista2):
+            if lista2[count] ==  lista1[count]:
                 spositions = spositions + 1
                 count = count + 1
             count = count + 1
