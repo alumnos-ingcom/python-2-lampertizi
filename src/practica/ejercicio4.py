@@ -10,7 +10,7 @@ PRE: un n° natural mayor a 2
 POST: término de la sucesión pedido
 """
 
-def encontrar_fibo(num_sucesion):
+def encontrar_a_fibo(num_sucesion):
     """
     retorna el término > 2 de la sucesion de fibonacci que se pide
     """
@@ -33,7 +33,7 @@ def principal():
     (La entrada, la llamada al algoritmo y la salida)
     """
     hasta_donde = int(input("qué termino querés saber? "))
-    resultado = encontrar_fibo(hasta_donde)
+    resultado = encontrar_a_fibo(hasta_donde)
     print(resultado)
     pass
 
