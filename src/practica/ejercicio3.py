@@ -9,7 +9,7 @@ Siendo 0 sin superposición y uno para cada elemento superpuesto.
 
 PRE: dos listas
 
-POST: n° de elementos superpuestos
+POST: n° de elementos superpuestos + posicion de superposicion
 """
 
 def find_superposes(lista1,lista2):
@@ -19,10 +19,12 @@ def find_superposes(lista1,lista2):
     menor = len(lista1) <= len(lista2)
     count = 0
     spositions = 0
+    position = []
     if menor:
         while count < len(lista1):
             if lista1[count] == lista2[count]:
                 spositions = spositions + 1
+                position.append(count)
                 count = count + 1
             else:
                 count = count + 1
@@ -30,10 +32,11 @@ def find_superposes(lista1,lista2):
         while count < len(lista2):
             if lista2[count] ==  lista1[count]:
                 spositions = spositions + 1
+                position.append(count)
                 count = count + 1
             else:
                 count = count + 1
-    return spositions
+    return spositions,position
 
 def principal():
     """
@@ -43,8 +46,8 @@ def principal():
     lista1 = str(input("ingrese una oración: "))
     lista2 = str(input("ingrese otra oración: "))
     
-    resultado = find_superposes(lista1,lista2)
-    print(resultado)
+    cantidad, posicion = find_superposes(lista1,lista2)
+    print(cantidad, posicion)
 
 if __name__ == "__main__":
     principal()
