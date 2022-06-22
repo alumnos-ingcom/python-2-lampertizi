@@ -1,12 +1,12 @@
 ################
-# Nombre - @usuario_github
+# Tiziano Lamperti - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
 from practica.ejercicio import principal
 
 """
-Describir aquí que es lo que se esta probando.
+se probará 
 """
 
 def test_nombrefuncion():
