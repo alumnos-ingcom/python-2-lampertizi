@@ -36,7 +36,7 @@ def find_superposes(lista1,lista2):
                 count = count + 1
             else:
                 count = count + 1
-    return spositions,position
+    return (spositions,position)
 
 def principal():
     """
