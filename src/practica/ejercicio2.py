@@ -11,6 +11,8 @@ que procesan secuencias.
 """
 
 def sacar_stats(tope_de_num):
+
+
     """
     Retorna una tupla con la siguiente forma (min,max,promedio)
     """
@@ -45,6 +47,8 @@ def sacar_stats(tope_de_num):
     return (real_maximo,real_minimo,cuenta)
 
 def principal():
+
+
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
