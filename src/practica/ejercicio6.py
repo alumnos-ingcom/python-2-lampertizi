@@ -55,10 +55,9 @@ def codifica_cesar(cadena,posiciones):
 
 
 def decodifica_cesar(texto,llave):
-
-    pass
-
-
+    llave = -llave
+    resultado = codifica_cesar(texto,llave)
+    return resultado
 
 def principal():
     """
@@ -68,6 +67,11 @@ def principal():
     cadena = input("cadena a codificar: ")
     corrido = int(input("posiciones a correr: "))
     resultado = codifica_cesar(cadena,corrido)
+    print(resultado)
+
+    cadena = input("cadena a decodificar: ")
+    corrido = int(input("llave: "))
+    resultado = decodifica_cesar(cadena,corrido)
     print(resultado)
 
 if __name__ == "__main__":
