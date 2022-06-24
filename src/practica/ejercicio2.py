@@ -19,8 +19,8 @@ def sacar_stats(tope_de_num):
     numeros = []
     para_promedio = 0
     count = 0
-        #se crea lista de  n° + suma para promedio
-    while count < tope_de_num:  
+#se crea lista de  n° + suma para promedio
+    while count < tope_de_num:
         numero = int(input("n° a ingresar: "))
         numeros.append(numero)
         para_promedio = para_promedio + numero

@@ -51,7 +51,7 @@ def encuentra_pares(string):
         if corche == cierra_c:
             if llave == cierra_l:
                 resultado = True
-    return resultado 
+    return resultado
 
 
 def principal():

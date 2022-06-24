@@ -38,5 +38,6 @@ def principal():
     resultado = encontrar_a_fibo(hasta_donde)
     print(resultado)
 
+
 if __name__ == "__main__":
     principal()

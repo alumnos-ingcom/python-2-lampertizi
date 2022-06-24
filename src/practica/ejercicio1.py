@@ -9,7 +9,6 @@ y False cuando no lo sea, sin utilizar módulo.
 """
 
 
-
 def encontrar_par(numero):
     """
     Retorna un bool indicando si el numero es par o no.

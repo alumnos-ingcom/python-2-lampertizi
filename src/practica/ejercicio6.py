@@ -59,8 +59,9 @@ def decodifica_cesar(texto, llave):
     retorna texto codificado en cifrado cesar
     """
     llave = -llave
-    resultado = codifica_cesar(texto,llave)
+    resultado = codifica_cesar(texto, llave)
     return resultado
+
 
 def principal():
     """
