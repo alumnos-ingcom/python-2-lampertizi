@@ -7,9 +7,8 @@ from practica.ejercicio4 import encontrar_a_fibo
 se probará la función que retorna el valor de la suc. de fibonacci pedido
 """
 
+
 def test_a_fibo():
-
-
     """
     se pondrán valores < 2 y muy grandes
     """

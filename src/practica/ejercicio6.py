@@ -15,7 +15,8 @@ PRE: n° de rotaciones + texto
 POST: texto rotado
 """
 
-def codifica_cesar(cadena,posiciones):
+
+def codifica_cesar(cadena, posiciones):
     """
     retorna el string codificado
     """
@@ -53,7 +54,7 @@ def codifica_cesar(cadena,posiciones):
     return cadena_final
 
 
-def decodifica_cesar(texto,llave):
+def decodifica_cesar(texto, llave):
     """
     retorna texto codificado en cifrado cesar
     """
@@ -68,12 +69,13 @@ def principal():
     """
     cadena = input("cadena a codificar: ")
     corrido = int(input("posiciones a correr: "))
-    resultado = codifica_cesar(cadena,corrido)
+    resultado = codifica_cesar(cadena, corrido)
     print(resultado)
     cadena = input("cadena a decodificar: ")
     corrido = int(input("llave: "))
-    resultado = decodifica_cesar(cadena,corrido)
+    resultado = decodifica_cesar(cadena, corrido)
     print(resultado)
+
 
 if __name__ == "__main__":
     principal()

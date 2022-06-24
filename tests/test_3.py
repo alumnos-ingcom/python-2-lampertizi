@@ -9,9 +9,8 @@ from practica.ejercicio3 import find_superposes
 Se probará la función find_superposes del ejercicio3
 """
 
+
 def test_superposiciones():
-
-
     """
     Se probarán listas,strings, listas c/ints,strings,bools,floats
     """
@@ -48,4 +47,3 @@ def test_superposiciones():
     assert caso5 == (0, []), mensaje5
     assert caso6 == (2, [0, 5]), mensaje6
     assert caso7 == (1, [5]), mensaje7
-

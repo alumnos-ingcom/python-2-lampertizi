@@ -9,9 +9,8 @@ from practica.ejercicio1 import encontrar_par
 Se prueba la función encontrar_par del ejercicio1
 """
 
+
 def test_encontrar_par():
-
-
     """
     Se evaluarán valores float,negativos,positivos y neutros
     """

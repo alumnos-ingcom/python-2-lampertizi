@@ -12,7 +12,8 @@ PRE: dos listas
 POST: n° de elementos superpuestos + posicion de superposicion
 """
 
-def find_superposes(lista1,lista2):
+
+def find_superposes(lista1, lista2):
     """
     Retorna el n° de elementos superpuestos entre 2 listas
     """
@@ -30,13 +31,14 @@ def find_superposes(lista1,lista2):
                 count = count + 1
     else:
         while count < len(lista2):
-            if lista2[count] ==  lista1[count]:
+            if lista2[count] == lista1[count]:
                 spositions = spositions + 1
                 position.append(count)
                 count = count + 1
             else:
                 count = count + 1
-    return (spositions,position)
+    return (spositions, position)
+
 
 def principal():
     """
@@ -45,8 +47,9 @@ def principal():
     """
     lista1 = str(input("ingrese una oración: "))
     lista2 = str(input("ingrese otra oración: "))
-    cantidad, posicion = find_superposes(lista1,lista2)
+    cantidad, posicion = find_superposes(lista1, lista2)
     print(cantidad, posicion)
+
 
 if __name__ == "__main__":
     principal()

@@ -10,9 +10,8 @@ Sin utilizar lazos for o las funciones integradas del lenguaje
 que procesan secuencias.
 """
 
+
 def sacar_stats(tope_de_num):
-
-
     """
     Retorna una tupla con la siguiente forma (min,max,promedio)
     """
@@ -20,7 +19,8 @@ def sacar_stats(tope_de_num):
     numeros = []
     para_promedio = 0
     count = 0
-    while count < tope_de_num: #se crea lista de  n° + suma para promedio
+        #se crea lista de  n° + suma para promedio
+    while count < tope_de_num:  
         numero = int(input("n° a ingresar: "))
         numeros.append(numero)
         para_promedio = para_promedio + numero
@@ -44,11 +44,10 @@ def sacar_stats(tope_de_num):
             real_minimo = minimo
             count = count + 1
             continue
-    return (real_maximo,real_minimo,cuenta)
+    return (real_maximo, real_minimo, cuenta)
+
 
 def principal():
-
-
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
@@ -56,6 +55,7 @@ def principal():
     numeros_a_meter = int(input("cuántos n° se ingresarán?: "))
     resultado = sacar_stats(numeros_a_meter)
     print(resultado)
+
 
 if __name__ == "__main__":
     principal()

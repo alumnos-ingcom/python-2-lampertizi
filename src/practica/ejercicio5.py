@@ -16,6 +16,7 @@ PRE: string con [({
 POST: bool indicando si todos los corchetes tienen cierre
 """
 
+
 def encuentra_pares(string):
     """
     retorna bool indicando si el string tiene cierre o no
@@ -35,7 +36,7 @@ def encuentra_pares(string):
             elif char == "[":
                 corche += 1
             else:
-                llave +=1
+                llave += 1
         elif char in cierra:
             if char == ")":
                 cierra_p += 1
@@ -52,14 +53,16 @@ def encuentra_pares(string):
                 resultado = True
     return resultado 
 
+
 def principal():
     """
     Esta función es la que se encarga de la parte 'interactiva' del ejercicio
     (La entrada, la llamada al algoritmo y la salida)
     """
     hilo = str(input("Ingrese cadena de brackets : "))
-    resultado =  encuentra_pares(hilo)
+    resultado = encuentra_pares(hilo)
     print(resultado)
+
 
 if __name__ == "__main__":
     principal()
