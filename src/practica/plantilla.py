@@ -1,12 +1,22 @@
 ################
-# Nombre - @usuario_github
+# Tiziano Lamperti  - @lampertizi
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
 """
 Enunciado del ejercicio
+
+PRE:
+
+POST:
 """
-# Reemplazar por las funciones del ejercicio
+
+
+def Y():
+    """
+    Q
+    """
+    pass
 
 
 def principal():
