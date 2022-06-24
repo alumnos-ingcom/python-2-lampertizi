@@ -11,11 +11,13 @@ PRE:
 POST:
 """
 
+
 def Y():
     """
     Q
     """
     pass
+
 
 def principal():
     """
@@ -27,4 +29,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-
