@@ -4,9 +4,9 @@
 ################
 """
 2. Estadísticas
-Implementar una función que obtenga los máximos, mínimos y promedio de 
+Implementar una función que obtenga los máximos, mínimos y promedio de
 una secuencia con números, retornando los valores como una tuple.
-Sin utilizar lazos for o las funciones integradas del lenguaje 
+Sin utilizar lazos for o las funciones integradas del lenguaje
 que procesan secuencias.
 """
 
@@ -41,7 +41,7 @@ def sacar_stats(tope_de_num):
             count = count + 1
         elif minimo < maximo:
             real_maximo = maximo
-            real_miniom = minimo
+            real_minimo = minimo
             count = count + 1
             continue
     return (real_maximo,real_minimo,cuenta)
@@ -59,4 +59,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-

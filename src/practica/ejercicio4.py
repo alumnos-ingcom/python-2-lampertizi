@@ -3,7 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 """
-Implementar una función que permita obtener el n-esimo termino de la 
+Implementar una función que permita obtener el n-esimo termino de la
 sucesión de Fibonacci. Siendo este número un entero positivo mayor a 2.
 PRE: un n° natural mayor a 2
 
@@ -35,8 +35,6 @@ def principal():
     hasta_donde = int(input("qué termino querés saber? "))
     resultado = encontrar_a_fibo(hasta_donde)
     print(resultado)
-    pass
 
 if __name__ == "__main__":
     principal()
-

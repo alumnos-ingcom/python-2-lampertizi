@@ -4,10 +4,10 @@
 ################
 """
 6. El Cifrado del Cesar
-Implementar una funcion que codifique un texto rotandolo 
+Implementar una funcion que codifique un texto rotandolo
 una cantidad de posiciones ajustable.
 
-Implementar la funcion que decodifique el texto rotado una 
+Implementar la funcion que decodifique el texto rotado una
 cantidad de posiciones ajustable.
 
 PRE: n° de rotaciones + texto
@@ -50,11 +50,13 @@ def codifica_cesar(cadena,posiciones):
                 caracter_cambiado = chr(valor_caracter + posiciones)
                 cadena_final = cadena_final + caracter_cambiado
                 count = count + 1
-            
     return cadena_final
 
 
 def decodifica_cesar(texto,llave):
+    """
+    retorna texto codificado en cifrado cesar
+    """
     llave = -llave
     resultado = codifica_cesar(texto,llave)
     return resultado
@@ -68,7 +70,6 @@ def principal():
     corrido = int(input("posiciones a correr: "))
     resultado = codifica_cesar(cadena,corrido)
     print(resultado)
-
     cadena = input("cadena a decodificar: ")
     corrido = int(input("llave: "))
     resultado = decodifica_cesar(cadena,corrido)
@@ -76,4 +77,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-

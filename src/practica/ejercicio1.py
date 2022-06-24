@@ -4,7 +4,7 @@
 ################
 """
 1. Pares e impares
-Escribir una función que retorne True cuando un número entero es par 
+Escribir una función que retorne True cuando un número entero es par
 y False cuando no lo sea, sin utilizar módulo.
 """
 
@@ -16,7 +16,8 @@ def encontrar_par(numero):
     """
     cuenta1 = numero / 2
     cuenta2 = numero // 2
-    return(cuenta2 - cuenta1 == 0)
+    resultado = (cuenta2 - cuenta1 == 0)
+    return resultado
 
 def principal():
 
@@ -31,4 +32,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-

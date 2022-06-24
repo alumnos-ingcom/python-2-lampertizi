@@ -45,7 +45,6 @@ def principal():
     """
     lista1 = str(input("ingrese una oración: "))
     lista2 = str(input("ingrese otra oración: "))
-    
     cantidad, posicion = find_superposes(lista1,lista2)
     print(cantidad, posicion)
 

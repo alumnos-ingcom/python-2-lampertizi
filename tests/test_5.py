@@ -10,7 +10,7 @@ se probará la función que encuentra pares de {}()[]
 
 def test_encuentrapares():
 
-    
+
     """
     se probarán strings con letras,simbolos, y combos irregulares de {[()]}
     """

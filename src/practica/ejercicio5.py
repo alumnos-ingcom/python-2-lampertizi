@@ -5,10 +5,10 @@
 
 """
 5. Corchetes balanceados
-Implementar una función que determine si una cadena con corchetes 
+Implementar una función que determine si una cadena con corchetes
 está balanceada.
 
-Es decir, si cada corchete que abre, tiene su par que cierra. 
+Es decir, si cada corchete que abre, tiene su par que cierra.
 El resultado debe ser un valor lógico indicando si esta o no balanceado.
 
 PRE: string con [({
@@ -17,9 +17,11 @@ POST: bool indicando si todos los corchetes tienen cierre
 """
 
 def encuentra_pares(string):
+    """
+    retorna bool indicando si el string tiene cierre o no
+    """
     abre = "{[("
     cierra = "}])"
-    
     parentesis = 0
     corche = 0
     llave = 0
@@ -61,4 +63,3 @@ def principal():
 
 if __name__ == "__main__":
     principal()
-
